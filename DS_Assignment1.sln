@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36408.4 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Question1", "DS_Assignment1\DS_Assignment1.vcxproj", "{AB61C7C7-363E-444E-A12F-B4620374EF74}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Question1", "Question1\Question1.vcxproj", "{AB61C7C7-363E-444E-A12F-B4620374EF74}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Question2", "Quesion2\Quesion2.vcxproj", "{564D7542-C09B-4EA6-BE48-C4C0D53132FD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Question2", "Question2\Question2.vcxproj", "{564D7542-C09B-4EA6-BE48-C4C0D53132FD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Question3", "Question3\Question3.vcxproj", "{86CA15DD-E9E2-4654-B08F-EBF98E5C88D2}"
 EndProject
