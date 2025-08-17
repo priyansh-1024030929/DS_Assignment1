@@ -39,15 +39,74 @@ void display() {
 }
 
 void insert() {
-
+	if (num != 0) {
+	int ins,pos,val;
+	cout << "\nWhich array to add data to:-";
+	for (int i = 0; i < num; i++) {
+		cout << endl << "Array " << i + 1;
+	}
+	cout << "\n";
+	cin >> ins;
+	cout << "The array has " << ::size[ins - 1] << "values. Value to be inserted at which position: ";
+	cin >> pos;
+	if (pos < ::size[ins - 1]) {
+		cout << "Enter data value: ";
+		cin >> val;
+		//WIP
+	}
+	else {
+		cout << "Invalid Input";
+	}
+}
+else {
+	cout << "Create an array first!\n";
+}
 }
 
 void del() {
-
+	if (num != 0) {
+	int del, pos;
+	cout << "\nWhich array to delete data from:-";
+	for (int i = 0; i < num; i++) {
+		cout << endl << "Array " << i + 1;
+	}
+	cout << "\n";
+	cin >> del;
+	cout << "The array has " << ::size[del - 1] << "values. Position of the value to be deleted: ";
+	cin >> pos;
+	for (int i = pos; i < ::size[del - 1]-pos+1; i++) {
+		creator[del - 1][i] = creator[del - 1][i + 1];
+	}
+	::size[del - 1] -= 1;
+}
+else {
+	cout << "Create an array first!\n";
+}
+menu();
 }
 
 void search() {
-
+	if (num != 0) {
+	int find, val;
+	cout << "\nWhich array to find data in:-";
+	for (int i = 0; i < num; i++) {
+		cout << endl << "Array " << i + 1;
+	}
+	cout << "\n";
+	cin >> find;
+	cout << "Value to find: ";
+	cin >> val;
+	for (int i = 0; i < ::size[find - 1] ; i++) {
+		if (creator[find - 1][i] == val) {
+			cout << "Value found at position " << i + 1;
+			break;
+		}
+	}
+}
+else {
+	cout << "Create an array first!\n";
+}
+menu();
 }
 
 void menu() {
